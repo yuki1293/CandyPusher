@@ -3318,6 +3318,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CreateCandy
   CandyPrefab: {fileID: 3005611345866064944, guid: 215708b40cf198242922f891abaf04e7, type: 3}
+  speed: 3
+  moveRange: 2.3
 --- !u!4 &1999953223
 Transform:
   m_ObjectHideFlags: 0

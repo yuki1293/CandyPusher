@@ -10,6 +10,11 @@ public class CreateCandy : MonoBehaviour
     private int CandyCount = 0;
     public GameObject CandyPrefab;
 
+    //往復移動のための変数
+    public float speed = 3.0f;
+    public float moveRange = 2.3f;
+    private float startX;
+
     // 4.関数AddCandyを作成
     //　型　名前　
     void AddCandy()
@@ -29,16 +34,23 @@ public class CreateCandy : MonoBehaviour
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
-    {
+
+    {   startX = this.transform.position.x;
         //処理をしたい関数を書く
         AddCandy();
+
+       
     }
 
     // Update is called once per frame
     void Update()
     {
+        float currentRange = moveRange * 2;
+        float xOffset = Mathf.PingPong(Time.time * speed,  currentRange) - moveRange;
+        this.transform.position = new Vector3(startX + xOffset,this.transform.position.y,this.transform.position.z);
+
         //if文　もしも（条件）がtrueならば{　}の処理をする
-        if(Keyboard.current.spaceKey.isPressed)
+        if(Keyboard.current.spaceKey.wasPressedThisFrame)
         {
             AddCandy();
         }
