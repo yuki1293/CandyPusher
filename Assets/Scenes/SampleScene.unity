@@ -2037,8 +2037,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -700, y: 483}
-  m_SizeDelta: {x: 500, y: 50}
+  m_AnchoredPosition: {x: -677.20087, y: 433.19427}
+  m_SizeDelta: {x: 545.5983, y: 149.6115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1208022827
 MonoBehaviour:
@@ -2635,8 +2635,8 @@ Transform:
   m_GameObject: {fileID: 1668179165}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.03, y: 0.57000005, z: -0.30999994}
-  m_LocalScale: {x: 5.89, y: 5, z: 10}
+  m_LocalPosition: {x: -6.03, y: 9.46, z: -0.30999994}
+  m_LocalScale: {x: 5.89, y: 23.091, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2990,8 +2990,8 @@ Transform:
   m_GameObject: {fileID: 1719253480}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.82, z: 6.8999996}
-  m_LocalScale: {x: 5.89, y: 5, z: 10}
+  m_LocalPosition: {x: 0, y: 9.87, z: 6.8999996}
+  m_LocalScale: {x: 5.89, y: 18.852001, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3219,8 +3219,8 @@ Transform:
   m_GameObject: {fileID: 1868504518}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.15, y: 0.57000005, z: -0.30999994}
-  m_LocalScale: {x: 5.89, y: 5, z: 10}
+  m_LocalPosition: {x: 6.15, y: 9.46, z: -0.30999994}
+  m_LocalScale: {x: 5.89, y: 23.091, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3298,6 +3298,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1999953223}
   - component: {fileID: 1999953222}
+  - component: {fileID: 1999953225}
+  - component: {fileID: 1999953226}
   m_Layer: 0
   m_Name: CreateCandy
   m_TagString: Untagged
@@ -3318,6 +3320,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CreateCandy
   CandyPrefab: {fileID: 3005611345866064944, guid: 215708b40cf198242922f891abaf04e7, type: 3}
+  CandyPrefabs:
+  - {fileID: 3005611345866064944, guid: 215708b40cf198242922f891abaf04e7, type: 3}
+  - {fileID: 3005611345866064944, guid: 2633b4cc8671ff047a120767e4301f8b, type: 3}
+  - {fileID: 3005611345866064944, guid: f8c70e798648f2e438152abb86ed7b90, type: 3}
   speed: 3
   moveRange: 2.3
 --- !u!4 &1999953223
@@ -3335,6 +3341,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1999953225
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999953221}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &1999953226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999953221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17940b0988b8d2147b606714a4fed04f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoveCaretePosition
 --- !u!1001 &2025075465
 PrefabInstance:
   m_ObjectHideFlags: 0
