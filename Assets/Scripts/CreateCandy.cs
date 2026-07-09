@@ -17,13 +17,17 @@ public class CreateCandy : MonoBehaviour
     public float moveRange = 2.3f;
     private float startX;
 
+    public AudioManager audioManager;
+
     // 4.�֐�AddCandy���쐬
     //�@�^�@���O�@
     void AddCandy()
     {
+        audioManager.SEPlay(1);
         // �T.�֐�AddCandyCount�̒���CandyCount��1���₷
         CandyCount = CandyCount + 1;
-
+        
+        
         // 6.�֐�AddCandy�̒���CandyCount�̒l�R���\�[��(Debug.Log())�ɕ\������
         Debug.Log(CandyCount);
         //　0 ~ CandyPrefabsの要素数-1までのランダムな整数を取得
@@ -76,6 +80,7 @@ public class CreateCandy : MonoBehaviour
         if(Keyboard.current.spaceKey.wasPressedThisFrame)
         {
             AddCandy();
+
         }
     }
 }
