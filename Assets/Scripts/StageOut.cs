@@ -14,12 +14,12 @@ public class StageOut : MonoBehaviour
     // 3. オブジェクトがすり抜けたら(OnTriggerEnterが呼ばれたら)変数 Scoreに1を加算する
     // 4. 加算後の変数 ScoreをDebug.Logでコンソール上に出力する
 
-    public AudioManager audioManager;
     // このコードがアタッチされているオブジェクトのisTrigger(コライダー設定)が有効⇩
     // かつ他のオブジェクトがすり抜けた時に中の処理を行うイベント関数⇩
     void OnTriggerEnter(Collider other)
     {
-        audioManager.SEPlay(0);
+        AudioManager.instance.SEPlay(0);
+
         Score += 1;
         ScoreText.text = $"スコア：{Score}";
         // 変数名 otherってなに？

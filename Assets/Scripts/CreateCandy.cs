@@ -23,7 +23,7 @@ public class CreateCandy : MonoBehaviour
     //�@�^�@���O�@
     void AddCandy()
     {
-        audioManager.SEPlay(1);
+        AudioManager.instance.SEPlay(1);
         // �T.�֐�AddCandyCount�̒���CandyCount��1���₷
         CandyCount = CandyCount + 1;
         

@@ -3,7 +3,7 @@ using UnityEngine;
 public class PusherMove : MonoBehaviour
 {
     public float speed = 1f;
-    public float pusherMoveRange = 5f;
+    public float pusherMoveRange = 10f;
     private Vector3 startPosition;
     private Rigidbody rb; 
 
