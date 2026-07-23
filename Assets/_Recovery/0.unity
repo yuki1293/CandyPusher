@@ -3353,7 +3353,6 @@ GameObject:
   - component: {fileID: 1999953222}
   - component: {fileID: 1999953225}
   - component: {fileID: 1999953226}
-  - component: {fileID: 1999953227}
   m_Layer: 0
   m_Name: CreateCandy
   m_TagString: Untagged
@@ -3435,19 +3434,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17940b0988b8d2147b606714a4fed04f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveCaretePosition
---- !u!114 &1999953227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1999953221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca4f24231eed0df47b39cfa73c4bab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DeviceInput
-  createCandy: {fileID: 1999953222}
 --- !u!1001 &2025075465
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -12,6 +12,8 @@ public class CreateCandy : MonoBehaviour
     // GameObjectの配列を作成
     public GameObject[] CandyPrefabs;
 
+    
+
     //�����ړ��̂��߂̕ϐ�
     public float speed = 3.0f;
     public float moveRange = 2.3f;
@@ -21,7 +23,7 @@ public class CreateCandy : MonoBehaviour
 
     // 4.�֐�AddCandy���쐬
     //�@�^�@���O�@
-    void AddCandy()
+    public void AddCandy()
     {
         AudioManager.instance.SEPlay(1);
         // �T.�֐�AddCandyCount�̒���CandyCount��1���₷
