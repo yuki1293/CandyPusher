@@ -3,7 +3,7 @@ using TMPro;
 
 public class MoneyManager : MonoBehaviour
 {
-    public int money = 1000;
+    public int money = 10000;
 
     public int createCost = 100;
     public int rewardMoney = 100;
@@ -14,8 +14,8 @@ public class MoneyManager : MonoBehaviour
 
     // ボーナス関連
     public int requiredCandyCount = 10;   // 何個落としたらボーナス開始？
-    public float bonusTime = 5f;          // ボーナスの秒数
-    public int bonusMultiplier = 2;       // 何倍にする？
+    public float bonusTime = 10f;          // ボーナスの秒数
+    public int bonusMultiplier = 5;       // 何倍にする？
     private bool isBonus = false;         // ボーナス中か？
     private float bonusTimer = 0f;        // ボーナス残り時間
 

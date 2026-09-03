@@ -15,7 +15,7 @@ public class MoveCaretePosition : MonoBehaviour
     void Update()
     {
          //　Sin波の動き
-        float x = Mathf.Sin(Time.time * 1f)*2f;
+        float x = Mathf.Sin(Time.time * 1f)*5f;
         // Sin波の動きをX軸方向に反映させる
         this.transform.position = startPosition + new Vector3(x, 0, 0);
     }

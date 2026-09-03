@@ -2,25 +2,23 @@ using UnityEngine;
 
 public class PusherMove : MonoBehaviour
 {
-    public float speed = 1f;
-    public float pusherMoveRange = 10f;
-    private Vector3 startPosition;
-    private Rigidbody rb; 
+    public float speed = 0.5f;
+    public float pusherMoveRange = 5f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private Vector3 startPosition;
+
     void Start()
     {
+        // 初期位置を記録
         startPosition = this.transform.localPosition;
-        // 自身に付いているRigidbodyコンポーネントを取得して、変数rbに入れる
-        rb = this.GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
     void Update()
     {
+        // Sin波で前後に揺れる
         float z = Mathf.Sin(Time.time * speed) * pusherMoveRange;
-        // 自身のローカル座標の位置を 最初の位置情報に Z(Sin波の変動値)を加算して返す
-        //this.transform.localPosition = startPosition + new Vector3(0,0,z);
-        rb.linearVelocity = new Vector3(0, 0, z);
+
+        // ★ 初期位置を中心に前後移動（ズレない）
+        this.transform.localPosition = startPosition + new Vector3(0, 0, z);
     }
 }
